@@ -1,0 +1,173 @@
+itemGroup.computercraft=ComputerCraft
+
+tile.computercraft:computer.name=コンピューター
+tile.computercraft:advanced_computer.name=アドバンストコンピューター
+tile.computercraft:drive.name=ディスクドライブ
+tile.computercraft:printer.name=プリンター
+tile.computercraft:monitor.name=モニター
+tile.computercraft:advanced_monitor.name=アドバンストモニター
+tile.computercraft:wireless_modem.name=無線モデム
+tile.computercraft:wired_modem.name=有線モデム
+tile.computercraft:cable.name=ネットワークケーブル
+tile.computercraft:command_computer.name=コマンドコンピューター
+tile.computercraft:advanced_modem.name=エンダーモデム
+tile.computercraft:speaker.name=スピーカー
+
+tile.computercraft:turtle.name=タートル
+tile.computercraft:turtle.upgraded.name=%s タートル
+tile.computercraft:turtle.upgraded_twice.name=%s %s タートル
+tile.computercraft:advanced_turtle.name=アドバンストタートル
+tile.computercraft:advanced_turtle.upgraded.name=アドバンスト %s タートル
+tile.computercraft:advanced_turtle.upgraded_twice.name=アドバンスト %s %s タートル
+
+item.computercraft:disk.name=フロッピーディスク
+item.computercraft:treasure_disk.name=フロッピーディスク
+item.computercraft:page.name=印刷された紙
+item.computercraft:pages.name=印刷された冊子
+item.computercraft:book.name=印刷された本
+
+item.computercraft:pocket_computer.name=ポケットコンピューター
+item.computercraft:pocket_computer.upgraded.name=%s ポケットコンピューター
+item.computercraft:advanced_pocket_computer.name=アドバンストポケットコンピューター
+item.computercraft:advanced_pocket_computer.upgraded.name=アドバンスト %s ポケットコンピューター
+
+upgrade.minecraft:diamond_sword.adjective=戦闘
+upgrade.minecraft:diamond_shovel.adjective=掘削
+upgrade.minecraft:diamond_pickaxe.adjective=採掘
+upgrade.minecraft:diamond_axe.adjective=伐採
+upgrade.minecraft:diamond_hoe.adjective=農業
+upgrade.computercraft:wireless_modem.adjective=無線
+upgrade.minecraft:crafting_table.adjective=クラフト
+upgrade.computercraft:advanced_modem.adjective=エンダー
+upgrade.computercraft:speaker.adjective=騒音
+
+gui.computercraft:wired_modem.peripheral_connected=周辺機器"%s"がネットワークに接続されました
+gui.computercraft:wired_modem.peripheral_disconnected=周辺機器"%s"がネットワークから切断されました
+
+# Command descriptions, usage and any additional messages.
+commands.computercraft.synopsis=コンピューターを制御するための様々なコマンドです。
+commands.computercraft.desc=/computercraftコマンドはコンピューターを制御し対話するための様々なデバッグおよび管理ツールを提供します。
+
+commands.computercraft.help.synopsis=特定のコマンドのヘルプを提供します。
+commands.computercraft.help.desc=
+commands.computercraft.help.usage=[command]
+commands.computercraft.help.no_children=%sにサブコマンドはありません
+commands.computercraft.help.no_command=コマンド'%s'は存在しません
+
+commands.computercraft.dump.synopsis=コンピューターのステータスを表示します。
+commands.computercraft.dump.desc=すべてのコンピューターのステータスまたは1台のコンピューターについての特定の情報を表示します。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
+commands.computercraft.dump.usage=[id]
+commands.computercraft.dump.action=このコンピューターの情報をさらに表示する
+
+commands.computercraft.shutdown.synopsis=コンピューターを遠隔でシャットダウンします。
+commands.computercraft.shutdown.desc=列挙したコンピューターあるいは何も指定しなかった場合はすべてのコンピューターをシャットダウンします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
+commands.computercraft.shutdown.usage=[ids...]
+commands.computercraft.shutdown.done=%s/%s台のコンピュータをシャットダウンしました
+
+commands.computercraft.turn_on.synopsis=コンピューターの電源を遠隔で入れます。
+commands.computercraft.turn_on.desc=列挙したコンピューターの電源を入れます。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
+commands.computercraft.turn_on.usage=[ids...]
+commands.computercraft.turn_on.done=%s/%s台のコンピュータが起動しました
+
+commands.computercraft.tp.synopsis=特定のコンピューターへテレポートします。
+commands.computercraft.tp.desc=コンピューターの場所へテレポートします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）を指定できます。
+commands.computercraft.tp.usage=<id>
+commands.computercraft.tp.action=このコンピューターへテレポート
+commands.computercraft.tp.not_entity=非プレイヤーは端末画面を開けません
+commands.computercraft.tp.not_there=ワールド内にコンピューターを見つけることができませんでした
+
+commands.computercraft.view.synopsis=コンピューターの端末画面を開きます。
+commands.computercraft.view.desc=コンピューターの遠隔操作が可能な端末画面を開きます。これはタートルのインベントリーにはアクセスできません。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）を指定できます。
+commands.computercraft.view.usage=<id>
+commands.computercraft.view.action=このコンピューターを見る
+commands.computercraft.view.not_player=非プレイヤーは端末画面を開けません
+
+commands.computercraft.track.synopsis=コンピュータの実行時間を追跡します。
+commands.computercraft.track.desc=コンピュータの実行時間、および処理したイベント数を追跡します。 これは/forge trackと類似した方法で情報を表示し、ラグを診断するのに役立ちます。
+
+commands.computercraft.track.start.synopsis=全てのコンピュータの追跡を開始します。
+commands.computercraft.track.start.desc=全てのコンピュータの実行時間とイベント数の追跡を開始します。以前の実行結果は破棄されます。
+commands.computercraft.track.start.usage=
+commands.computercraft.track.start.stop=追跡を停止し結果を見るためには%sを実行してください
+
+commands.computercraft.track.stop.synopsis=全てのコンピュータの追跡を停止します。
+commands.computercraft.track.stop.desc=全てのコンピュータの実行時間とイベント数の追跡を停止します。
+commands.computercraft.track.stop.usage=
+commands.computercraft.track.stop.action=クリックして追跡を停止します
+commands.computercraft.track.stop.not_enabled=現在コンピュータを追跡していません
+
+commands.computercraft.track.dump.synopsis=最新の追跡結果を出力します。
+commands.computercraft.track.dump.desc=最新のコンピューター追跡結果を出力します。
+commands.computercraft.track.dump.usage=[kind]
+commands.computercraft.track.dump.no_timings=計時情報がありません
+commands.computercraft.track.dump.no_field=Unknown field '%s'
+commands.computercraft.track.dump.computer=コンピューター
+
+commands.computercraft.reload.synopsis=ComputerCraftの設定ファイルをリロードします。
+commands.computercraft.reload.desc=ComputerCraftの設定ファイルをリロードします。
+commands.computercraft.reload.usage=
+commands.computercraft.reload.done=設定がリロードされました
+
+commands.computercraft.queue.synopsis=computer_commandイベントをコマンドコンピューターに送信します。
+commands.computercraft.queue.desc=追加の引数を添えてcomputer_commandイベントをコマンドコンピューターに送信します。これは主にマップ作成者向けに設計されており、/triggerよりもコンピューターに優しいバージョンとして機能します。テキストコンポーネントのクリックイベントを介したりすれば、どんなプレイヤーでもコマンドを実行することができます。
+commands.computercraft.queue.usage=<id> [args...]
+
+commands.computercraft.generic.no_position=<位置なし>
+commands.computercraft.generic.position=%s, %s, %s
+commands.computercraft.generic.yes=Y
+commands.computercraft.generic.no=N
+commands.computercraft.generic.exception=捕捉されない例外(%s)
+commands.computercraft.generic.additional_rows=%d行の追加された行…
+
+commands.computercraft.argument.no_matching='%s'にマッチするコンピューターはありませんでした
+commands.computercraft.argument.many_matching='%s' (instances %s)にマッチするコンピューターが複数存在します
+commands.computercraft.argument.not_number='%s'は数値ではありません
+
+# Names for the various tracking fields.
+tracking_field.computercraft.tasks.name=タスク
+tracking_field.computercraft.total.name=合計時間
+tracking_field.computercraft.average.name=平均時間
+tracking_field.computercraft.max.name=最大時間
+
+tracking_field.computercraft.server_count.name=サーバータスク数
+tracking_field.computercraft.server_time.name=サーバータスク時間
+
+tracking_field.computercraft.peripheral.name=周辺機器の呼び出し
+tracking_field.computercraft.fs.name=ファイルシステムの処理
+tracking_field.computercraft.turtle.name=タートルの処理
+
+tracking_field.computercraft.http.name=HTTPリクエスト
+tracking_field.computercraft.http_upload.name=HTTPアップロード
+tracking_field.computercraft.http_download.name=HTTPダウンロード
+
+tracking_field.computercraft.websocket_incoming.name=Websocket受信
+tracking_field.computercraft.websocket_outgoing.name=Websocket送信
+
+tracking_field.computercraft.coroutines_created.name=コルーチン作成
+tracking_field.computercraft.coroutines_dead.name=コルーチン解放
+
+# Misc tooltips
+gui.computercraft.tooltip.copy=クリップボードへコピー
+gui.computercraft.tooltip.computer_id=(コンピューターID: %s)
+gui.computercraft.tooltip.disk_id=(ディスクID: %s)
+
+gui.computercraft:config.http_enable=HTTP APIを有効化
+gui.computercraft:config.http_whitelist=HTTPホワイトリスト
+gui.computercraft:config.http_blacklist=HTTPブラックリスト
+gui.computercraft:config.disable_lua51_features=Lua 5.1の機能を無効化
+gui.computercraft:config.default_computer_settings=デフォルトのコンピューター設定
+gui.computercraft:config.log_peripheral_errors=周辺機器のエラーを記録
+gui.computercraft:config.enable_command_block=コマンドブロック周辺機器を有効化
+gui.computercraft:config.modem_range=モデムの通信範囲（デフォルト）
+gui.computercraft:config.modem_high_altitude_range=モデムの通信範囲（高高度）
+gui.computercraft:config.modem_range_during_storm=モデムの通信範囲（悪天候）
+gui.computercraft:config.modem_high_altitude_range_during_storm=モデムの通信範囲（高高度、悪天候）
+gui.computercraft:config.computer_space_limit=コンピューターの容量（バイト）
+gui.computercraft:config.floppy_space_limit=フロッピーディスクの容量（バイト）
+gui.computercraft:config.turtles_need_fuel=燃料を有効化
+gui.computercraft:config.turtle_fuel_limit=タートルの燃料の最大量
+gui.computercraft:config.advanced_turtle_fuel_limit=アドバンストタートルの燃料の最大量
+gui.computercraft:config.turtles_obey_block_protection=タートルがブロック保護に従うか
+gui.computercraft:config.turtles_can_push=タートルがエンティティーを押せるか
+gui.computercraft:config.maximum_files_open=コンピュータあたりの開けるファイルの最大数
+gui.computercraft:config.max_notes_per_tick=コンピュータあたりの同時に再生できる音の最大数
