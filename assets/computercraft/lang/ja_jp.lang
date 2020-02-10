@@ -1,4 +1,3 @@
-itemGroup.computercraft=ComputerCraft
 
 tile.computercraft:computer.name=コンピューター
 tile.computercraft:advanced_computer.name=アドバンストコンピューター
@@ -14,11 +13,11 @@ tile.computercraft:advanced_modem.name=エンダーモデム
 tile.computercraft:speaker.name=スピーカー
 
 tile.computercraft:turtle.name=タートル
-tile.computercraft:turtle.upgraded.name=%s タートル
-tile.computercraft:turtle.upgraded_twice.name=%s %s タートル
+tile.computercraft:turtle.upgraded.name=%sタートル
+tile.computercraft:turtle.upgraded_twice.name=%s%sタートル
 tile.computercraft:advanced_turtle.name=アドバンストタートル
-tile.computercraft:advanced_turtle.upgraded.name=アドバンスト %s タートル
-tile.computercraft:advanced_turtle.upgraded_twice.name=アドバンスト %s %s タートル
+tile.computercraft:advanced_turtle.upgraded.name=アドバンスト%sタートル
+tile.computercraft:advanced_turtle.upgraded_twice.name=アドバンスト%s%sタートル
 
 item.computercraft:disk.name=フロッピーディスク
 item.computercraft:treasure_disk.name=フロッピーディスク
@@ -27,13 +26,13 @@ item.computercraft:pages.name=印刷された冊子
 item.computercraft:book.name=印刷された本
 
 item.computercraft:pocket_computer.name=ポケットコンピューター
-item.computercraft:pocket_computer.upgraded.name=%s ポケットコンピューター
+item.computercraft:pocket_computer.upgraded.name=%sポケットコンピューター
 item.computercraft:advanced_pocket_computer.name=アドバンストポケットコンピューター
-item.computercraft:advanced_pocket_computer.upgraded.name=アドバンスト %s ポケットコンピューター
+item.computercraft:advanced_pocket_computer.upgraded.name=アドバンスト%sポケットコンピューター
 
 upgrade.minecraft:diamond_sword.adjective=戦闘
-upgrade.minecraft:diamond_shovel.adjective=掘削
-upgrade.minecraft:diamond_pickaxe.adjective=採掘
+upgrade.minecraft:diamond_shovel.adjective=採掘
+upgrade.minecraft:diamond_pickaxe.adjective=採鉱
 upgrade.minecraft:diamond_axe.adjective=伐採
 upgrade.minecraft:diamond_hoe.adjective=農業
 upgrade.computercraft:wireless_modem.adjective=無線
@@ -46,9 +45,9 @@ gui.computercraft:wired_modem.peripheral_disconnected=周辺機器"%s"がネッ�
 
 # Command descriptions, usage and any additional messages.
 commands.computercraft.synopsis=コンピューターを制御するための様々なコマンドです。
-commands.computercraft.desc=/computercraftコマンドはコンピューターを制御し対話するための様々なデバッグおよび管理ツールを提供します。
+commands.computercraft.desc=/computercraftコマンドはコンピューターを制御しコンピューターと対話するための様々なデバッグおよび管理ツールを提供します。
 
-commands.computercraft.help.synopsis=特定のコマンドのヘルプを提供します。
+commands.computercraft.help.synopsis=指定したコマンドのヘルプを提供します。
 commands.computercraft.help.desc=
 commands.computercraft.help.usage=[command]
 commands.computercraft.help.no_children=%sにサブコマンドはありません
@@ -59,17 +58,17 @@ commands.computercraft.dump.desc=すべてのコンピューターのステー�
 commands.computercraft.dump.usage=[id]
 commands.computercraft.dump.action=このコンピューターの情報をさらに表示する
 
-commands.computercraft.shutdown.synopsis=コンピューターを遠隔でシャットダウンします。
-commands.computercraft.shutdown.desc=列挙したコンピューターあるいは何も指定しなかった場合はすべてのコンピューターをシャットダウンします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
+commands.computercraft.shutdown.synopsis=遠隔操作でコンピューターをシャットダウンします。
+commands.computercraft.shutdown.desc=列挙したコンピューターまたは何も指定しなかった場合はすべてのコンピューターをシャットダウンします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
 commands.computercraft.shutdown.usage=[ids...]
 commands.computercraft.shutdown.done=%s/%s台のコンピュータをシャットダウンしました
 
-commands.computercraft.turn_on.synopsis=コンピューターの電源を遠隔で入れます。
+commands.computercraft.turn_on.synopsis=遠隔でコンピューターの電源を入れます。
 commands.computercraft.turn_on.desc=列挙したコンピューターの電源を入れます。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
 commands.computercraft.turn_on.usage=[ids...]
 commands.computercraft.turn_on.done=%s/%s台のコンピュータが起動しました
 
-commands.computercraft.tp.synopsis=特定のコンピューターへテレポートします。
+commands.computercraft.tp.synopsis=指定したコンピューターへテレポートします。
 commands.computercraft.tp.desc=コンピューターの場所へテレポートします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）を指定できます。
 commands.computercraft.tp.usage=<id>
 commands.computercraft.tp.action=このコンピューターへテレポート
@@ -83,24 +82,24 @@ commands.computercraft.view.action=このコンピューターを見る
 commands.computercraft.view.not_player=非プレイヤーは端末画面を開けません
 
 commands.computercraft.track.synopsis=コンピュータの実行時間を追跡します。
-commands.computercraft.track.desc=コンピュータの実行時間、および処理したイベント数を追跡します。 これは/forge trackと類似した方法で情報を表示し、ラグを診断するのに役立ちます。
+commands.computercraft.track.desc=コンピュータの実行時間、および処理したイベント数を追跡します。 情報は/forge trackと類似した方法で表示され、ラグを診断するのに役立ちます。
 
 commands.computercraft.track.start.synopsis=全てのコンピュータの追跡を開始します。
 commands.computercraft.track.start.desc=全てのコンピュータの実行時間とイベント数の追跡を開始します。以前の実行結果は破棄されます。
 commands.computercraft.track.start.usage=
-commands.computercraft.track.start.stop=追跡を停止し結果を見るためには%sを実行してください
+commands.computercraft.track.start.stop=追跡を停止し結果を表示するには%sを実行してください
 
 commands.computercraft.track.stop.synopsis=全てのコンピュータの追跡を停止します。
-commands.computercraft.track.stop.desc=全てのコンピュータの実行時間とイベント数の追跡を停止します。
+commands.computercraft.track.stop.desc=全てのコンピュータのイベントと実行時間の追跡を停止します。
 commands.computercraft.track.stop.usage=
 commands.computercraft.track.stop.action=クリックして追跡を停止します
-commands.computercraft.track.stop.not_enabled=現在コンピュータを追跡していません
+commands.computercraft.track.stop.not_enabled=現在はコンピュータを追跡していません
 
 commands.computercraft.track.dump.synopsis=最新の追跡結果を出力します。
 commands.computercraft.track.dump.desc=最新のコンピューター追跡結果を出力します。
 commands.computercraft.track.dump.usage=[kind]
 commands.computercraft.track.dump.no_timings=計時情報がありません
-commands.computercraft.track.dump.no_field=Unknown field '%s'
+commands.computercraft.track.dump.no_field=不明なフィールド'%s'
 commands.computercraft.track.dump.computer=コンピューター
 
 commands.computercraft.reload.synopsis=ComputerCraftの設定ファイルをリロードします。
@@ -117,10 +116,10 @@ commands.computercraft.generic.position=%s, %s, %s
 commands.computercraft.generic.yes=Y
 commands.computercraft.generic.no=N
 commands.computercraft.generic.exception=捕捉されない例外(%s)
-commands.computercraft.generic.additional_rows=%d行の追加された行…
+commands.computercraft.generic.additional_rows=%d行の追加行…
 
 commands.computercraft.argument.no_matching='%s'にマッチするコンピューターはありませんでした
-commands.computercraft.argument.many_matching='%s' (instances %s)にマッチするコンピューターが複数存在します
+commands.computercraft.argument.many_matching='%s'(インスタンス%s)にマッチするコンピューターが複数存在します
 commands.computercraft.argument.not_number='%s'は数値ではありません
 
 # Names for the various tracking fields.
@@ -143,8 +142,8 @@ tracking_field.computercraft.http_download.name=HTTPダウンロード
 tracking_field.computercraft.websocket_incoming.name=Websocket受信
 tracking_field.computercraft.websocket_outgoing.name=Websocket送信
 
-tracking_field.computercraft.coroutines_created.name=コルーチン作成
-tracking_field.computercraft.coroutines_dead.name=コルーチン解放
+tracking_field.computercraft.coroutines_created.name=作成されたコルーチン
+tracking_field.computercraft.coroutines_dead.name=解放されたコルーチン
 
 # Misc tooltips
 gui.computercraft.tooltip.copy=クリップボードへコピー
@@ -169,5 +168,5 @@ gui.computercraft:config.turtle_fuel_limit=タートルの燃料の最大量
 gui.computercraft:config.advanced_turtle_fuel_limit=アドバンストタートルの燃料の最大量
 gui.computercraft:config.turtles_obey_block_protection=タートルがブロック保護に従うか
 gui.computercraft:config.turtles_can_push=タートルがエンティティーを押せるか
-gui.computercraft:config.maximum_files_open=コンピュータあたりの開けるファイルの最大数
-gui.computercraft:config.max_notes_per_tick=コンピュータあたりの同時に再生できる音の最大数
+gui.computercraft:config.maximum_files_open=コンピュータ毎の開けるファイルの最大数
+gui.computercraft:config.max_notes_per_tick=コンピュータ毎の同時に再生できる音の最大数
