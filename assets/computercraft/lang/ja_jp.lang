@@ -47,23 +47,23 @@ gui.computercraft:wired_modem.peripheral_disconnected=周辺機器"%s"がネッ�
 commands.computercraft.synopsis=コンピューターを制御するための様々なコマンドです。
 commands.computercraft.desc=/computercraftコマンドはコンピューターを制御しコンピューターと対話するための様々なデバッグおよび管理ツールを提供します。
 
-commands.computercraft.help.synopsis=指定したコマンドのヘルプを提供します。
+commands.computercraft.help.synopsis=指定したコマンドのヘルプを表示します。
 commands.computercraft.help.desc=
 commands.computercraft.help.usage=[command]
 commands.computercraft.help.no_children=%sにサブコマンドはありません
 commands.computercraft.help.no_command=コマンド'%s'は存在しません
 
 commands.computercraft.dump.synopsis=コンピューターのステータスを表示します。
-commands.computercraft.dump.desc=すべてのコンピューターのステータスまたは1台のコンピューターについての特定の情報を表示します。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
+commands.computercraft.dump.desc=すべてのコンピューターのステータスまたは1台のコンピューターの詳細な情報を表示します。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
 commands.computercraft.dump.usage=[id]
-commands.computercraft.dump.action=このコンピューターの情報をさらに表示する
+commands.computercraft.dump.action=このコンピューターの情報を表示
 
-commands.computercraft.shutdown.synopsis=遠隔操作でコンピューターをシャットダウンします。
+commands.computercraft.shutdown.synopsis=コンピューターを遠隔でシャットダウンします。
 commands.computercraft.shutdown.desc=列挙したコンピューターまたは何も指定しなかった場合はすべてのコンピューターをシャットダウンします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
 commands.computercraft.shutdown.usage=[ids...]
 commands.computercraft.shutdown.done=%s/%s台のコンピュータをシャットダウンしました
 
-commands.computercraft.turn_on.synopsis=遠隔でコンピューターの電源を入れます。
+commands.computercraft.turn_on.synopsis=コンピューターを遠隔で起動します。
 commands.computercraft.turn_on.desc=列挙したコンピューターの電源を入れます。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 "@My Computer"）を指定できます。
 commands.computercraft.turn_on.usage=[ids...]
 commands.computercraft.turn_on.done=%s/%s台のコンピュータが起動しました
@@ -84,8 +84,10 @@ commands.computercraft.view.not_player=非プレイヤーは端末画面を開�
 commands.computercraft.track.synopsis=コンピュータの実行時間を追跡します。
 commands.computercraft.track.desc=コンピュータの実行時間、および処理したイベント数を追跡します。 情報は/forge trackと類似した方法で表示され、ラグを診断するのに役立ちます。
 
+commands.computercraft.track.help.synopsis=指定したサブコマンドのヘルプを表示します。
+
 commands.computercraft.track.start.synopsis=全てのコンピュータの追跡を開始します。
-commands.computercraft.track.start.desc=全てのコンピュータの実行時間とイベント数の追跡を開始します。以前の実行結果は破棄されます。
+commands.computercraft.track.start.desc=全てのコンピュータのイベントと実行時間の追跡を開始します。以前の追跡結果は破棄されます。
 commands.computercraft.track.start.usage=
 commands.computercraft.track.start.stop=追跡を停止し結果を表示するには%sを実行してください
 
@@ -98,7 +100,7 @@ commands.computercraft.track.stop.not_enabled=現在はコンピュータを追�
 commands.computercraft.track.dump.synopsis=最新の追跡結果を出力します。
 commands.computercraft.track.dump.desc=最新のコンピューター追跡結果を出力します。
 commands.computercraft.track.dump.usage=[kind]
-commands.computercraft.track.dump.no_timings=計時情報がありません
+commands.computercraft.track.dump.no_timings=計測結果がありません
 commands.computercraft.track.dump.no_field=不明なフィールド'%s'
 commands.computercraft.track.dump.computer=コンピューター
 
@@ -108,18 +110,18 @@ commands.computercraft.reload.usage=
 commands.computercraft.reload.done=設定がリロードされました
 
 commands.computercraft.queue.synopsis=computer_commandイベントをコマンドコンピューターに送信します。
-commands.computercraft.queue.desc=追加の引数を添えてcomputer_commandイベントをコマンドコンピューターに送信します。これは主にマップ作成者向けに設計されており、/triggerよりもコンピューターに優しいバージョンとして機能します。テキストコンポーネントのクリックイベントを介したりすれば、どんなプレイヤーでもコマンドを実行することができます。
+commands.computercraft.queue.desc=computer_commandイベントを追加の引数を添えてコマンドコンピューターに送信します。これは主にマップ作者向けに設計されており、/triggerよりもコンピューターに優しいバージョンとして機能します。テキストコンポーネントのクリックイベントを介したりすれば、どんなプレイヤーでもコマンドを実行することができます。
 commands.computercraft.queue.usage=<id> [args...]
 
 commands.computercraft.generic.no_position=<位置なし>
 commands.computercraft.generic.position=%s, %s, %s
 commands.computercraft.generic.yes=Y
 commands.computercraft.generic.no=N
-commands.computercraft.generic.exception=捕捉されない例外(%s)
+commands.computercraft.generic.exception=キャッチされていない例外(%s)
 commands.computercraft.generic.additional_rows=%d行の追加行…
 
 commands.computercraft.argument.no_matching='%s'にマッチするコンピューターはありませんでした
-commands.computercraft.argument.many_matching='%s'(インスタンス%s)にマッチするコンピューターが複数存在します
+commands.computercraft.argument.many_matching='%s'(インスタンス %s)にマッチするコンピューターが複数存在します
 commands.computercraft.argument.not_number='%s'は数値ではありません
 
 # Names for the various tracking fields.
@@ -142,7 +144,7 @@ tracking_field.computercraft.http_download.name=HTTPダウンロード
 tracking_field.computercraft.websocket_incoming.name=Websocket受信
 tracking_field.computercraft.websocket_outgoing.name=Websocket送信
 
-tracking_field.computercraft.coroutines_created.name=作成されたコルーチン
+tracking_field.computercraft.coroutines_created.name=生成されたコルーチン
 tracking_field.computercraft.coroutines_dead.name=解放されたコルーチン
 
 # Misc tooltips
