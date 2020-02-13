@@ -37,12 +37,12 @@
     "item.computercraft.pocket_computer_advanced.upgraded": "アドバンスト%sポケットコンピューター",
 
     "upgrade.minecraft.diamond_sword.adjective": "戦闘",
-    "upgrade.minecraft.diamond_shovel.adjective": "採掘",
-    "upgrade.minecraft.diamond_pickaxe.adjective": "採鉱",
+    "upgrade.minecraft.diamond_shovel.adjective": "穴掘",
+    "upgrade.minecraft.diamond_pickaxe.adjective": "採掘",
     "upgrade.minecraft.diamond_axe.adjective": "伐採",
     "upgrade.minecraft.diamond_hoe.adjective": "農業",
     "upgrade.minecraft.crafting_table.adjective": "クラフト",
-    "upgrade.computercraft.wireless_modem_normal.adjective": "無線",
+    "upgrade.computercraft.wireless_modem_normal.adjective": "ワイヤレス",
     "upgrade.computercraft.wireless_modem_advanced.adjective": "エンダー",
     "upgrade.computercraft.speaker.adjective": "騒音",
 

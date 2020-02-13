@@ -31,11 +31,11 @@ item.computercraft:advanced_pocket_computer.name=アドバンストポケット�
 item.computercraft:advanced_pocket_computer.upgraded.name=アドバンスト%sポケットコンピューター
 
 upgrade.minecraft:diamond_sword.adjective=戦闘
-upgrade.minecraft:diamond_shovel.adjective=採掘
-upgrade.minecraft:diamond_pickaxe.adjective=採鉱
+upgrade.minecraft:diamond_shovel.adjective=穴掘
+upgrade.minecraft:diamond_pickaxe.adjective=採掘
 upgrade.minecraft:diamond_axe.adjective=伐採
 upgrade.minecraft:diamond_hoe.adjective=農業
-upgrade.computercraft:wireless_modem.adjective=無線
+upgrade.computercraft:wireless_modem.adjective=ワイヤレス
 upgrade.minecraft:crafting_table.adjective=クラフト
 upgrade.computercraft:advanced_modem.adjective=エンダー
 upgrade.computercraft:speaker.adjective=騒音
