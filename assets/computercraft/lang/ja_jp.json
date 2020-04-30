@@ -41,13 +41,13 @@
     "upgrade.minecraft.diamond_pickaxe.adjective": "採掘",
     "upgrade.minecraft.diamond_axe.adjective": "伐採",
     "upgrade.minecraft.diamond_hoe.adjective": "農業",
-    "upgrade.minecraft.crafting_table.adjective": "クラフト",
-    "upgrade.computercraft.wireless_modem_normal.adjective": "ワイヤレス",
+    "upgrade.minecraft.crafting_table.adjective": "工作",
+    "upgrade.computercraft.wireless_modem_normal.adjective": "無線",
     "upgrade.computercraft.wireless_modem_advanced.adjective": "エンダー",
     "upgrade.computercraft.speaker.adjective": "騒音",
 
-    "chat.computercraft.wired_modem.peripheral_connected": "周辺機器\"%s\"がネットワークに接続されました",
-    "chat.computercraft.wired_modem.peripheral_disconnected": "周辺機器\"%s\"がネットワークから切断されました",
+    "chat.computercraft.wired_modem.peripheral_connected": "周辺機器 \"%s\" がネットワークに接続されました",
+    "chat.computercraft.wired_modem.peripheral_disconnected": "周辺機器 \"%s\" がネットワークから切断されました",
 
     "commands.computercraft.synopsis": "コンピューターを制御するための様々なコマンドです。",
     "commands.computercraft.desc": "/computercraftコマンドはコンピューターを制御しコンピューターと対話するための様々なデバッグおよび管理ツールを提供します。",
@@ -58,25 +58,25 @@
     "commands.computercraft.help.no_command": "コマンド'%s'は存在しません",
 
     "commands.computercraft.dump.synopsis": "コンピューターのステータスを表示します。",
-    "commands.computercraft.dump.desc": "すべてのコンピューターのステータスまたは1台のコンピューターの詳細な情報を表示します。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 \"@My Computer\"）を指定できます。",
+    "commands.computercraft.dump.desc": "すべてのコンピューターのステータスまたは1台のコンピューターの詳細な情報を表示します。コンピューターのインスタンスID (例 123) またはコンピューターID (例 #123)、ラベル (例 \"@My Computer\") を指定できます。",
     "commands.computercraft.dump.action": "このコンピューターの情報を表示",
 
     "commands.computercraft.shutdown.synopsis": "コンピューターを遠隔でシャットダウンします。",
-    "commands.computercraft.shutdown.desc": "列挙したコンピューターまたは何も指定しなかった場合はすべてのコンピューターをシャットダウンします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 \"@My Computer\"）を指定できます。",
+    "commands.computercraft.shutdown.desc": "列挙したコンピューターまたは何も指定しなかった場合はすべてのコンピューターをシャットダウンします。コンピューターのインスタンスID (例 123) またはコンピューターID (例 #123)、ラベル (例 \"@My Computer\") を指定できます。",
     "commands.computercraft.shutdown.done": "%s/%s台のコンピュータをシャットダウンしました",
 
     "commands.computercraft.turn_on.synopsis": "コンピューターを遠隔で起動します。",
-    "commands.computercraft.turn_on.desc": "列挙したコンピューターの電源を入れます。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）、ラベル（例 \"@My Computer\"）を指定できます。",
+    "commands.computercraft.turn_on.desc": "列挙したコンピューターの電源を入れます。コンピューターのインスタンスID (例 123) またはコンピューターID (例 #123)、ラベル (例 \"@My Computer\") を指定できます。",
     "commands.computercraft.turn_on.done": "%s/%s台のコンピュータが起動しました",
 
     "commands.computercraft.tp.synopsis": "指定したコンピューターへテレポートします。",
-    "commands.computercraft.tp.desc": "コンピューターの場所へテレポートします。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）を指定できます。",
+    "commands.computercraft.tp.desc": "コンピューターの場所へテレポートします。コンピューターのインスタンスID (例 123) またはコンピューターID (例 #123) を指定できます。",
     "commands.computercraft.tp.action": "このコンピューターへテレポート",
     "commands.computercraft.tp.not_player": "非プレイヤーは端末画面を開けません",
     "commands.computercraft.tp.not_there": "ワールド内にコンピューターを見つけることができませんでした",
 
     "commands.computercraft.view.synopsis": "コンピューターの端末画面を開きます。",
-    "commands.computercraft.view.desc": "コンピューターの遠隔操作が可能な端末画面を開きます。これはタートルのインベントリーにはアクセスできません。コンピューターのインスタンスID（例 123）またはコンピューターID（例 #123）を指定できます。",
+    "commands.computercraft.view.desc": "コンピューターの遠隔操作が可能な端末画面を開きます。これはタートルのインベントリーにはアクセスできません。コンピューターのインスタンスID (例 123) またはコンピューターID (例 #123) を指定できます。",
     "commands.computercraft.view.action": "このコンピューターを見る",
     "commands.computercraft.view.not_player": "非プレイヤーは端末画面を開けません",
 
@@ -110,13 +110,13 @@
     "commands.computercraft.generic.position": "%s, %s, %s",
     "commands.computercraft.generic.yes": "Y",
     "commands.computercraft.generic.no": "N",
-    "commands.computercraft.generic.exception": "キャッチされていない例外(%s)",
+    "commands.computercraft.generic.exception": "キャッチされていない例外 (%s)",
     "commands.computercraft.generic.additional_rows": "%d行の追加行…",
 
-    "argument.computercraft.computer.no_matching": "'%s'にマッチするコンピューターはありませんでした",
-    "argument.computercraft.computer.many_matching": "'%s'(インスタンス %s)にマッチするコンピューターが複数存在します",
+    "argument.computercraft.computer.no_matching": "'%s' にマッチするコンピューターはありませんでした",
+    "argument.computercraft.computer.many_matching": "'%s' (インスタンス %s) にマッチするコンピューターが複数存在します",
 
-    "argument.computercraft.tracking_field.no_field": "不明なフィールド'%s'",
+    "argument.computercraft.tracking_field.no_field": "不明なフィールド '%s'",
 
     "argument.computercraft.argument_expected": "必要な引数",
 
@@ -146,9 +146,9 @@
     "gui.computercraft.tooltip.computer_id": "(コンピューターID: %s)",
     "gui.computercraft.tooltip.disk_id": "(ディスクID: %s)",
 
-    "gui.computercraft.config.computer_space_limit": "コンピューターの最大容量（バイト）",
-    "gui.computercraft.config.floppy_space_limit": "フロッピーディスクの最大容量（バイト）",
-    "gui.computercraft.config.maximum_open_files": "コンピュータ毎の開けるファイルの最大数",
+    "gui.computercraft.config.computer_space_limit": "コンピューターの最大容量 (バイト)",
+    "gui.computercraft.config.floppy_space_limit": "フロッピーディスクの最大容量 (バイト)",
+    "gui.computercraft.config.maximum_open_files": "コンピューター毎に開けるファイルの最大数",
     "gui.computercraft.config.disable_lua51_features": "Lua 5.1の機能を無効化",
     "gui.computercraft.config.default_computer_settings": "デフォルトのコンピューター設定",
     "gui.computercraft.config.debug_enabled": "デバッグライブラリーの有効化",
@@ -156,29 +156,29 @@
 
     "gui.computercraft.config.execution": "実行",
     "gui.computercraft.config.execution.computer_threads": "コンピューターのスレッド数",
-    "gui.computercraft.config.execution.max_main_global_time": "全体のサーバーtick時間制限",
-    "gui.computercraft.config.execution.max_main_computer_time": "コンピューターのサーバーtick時間制限",
+    "gui.computercraft.config.execution.max_main_global_time": "1tick当たりの最大タスク実行時間",
+    "gui.computercraft.config.execution.max_main_computer_time": "1tick当たりの各コンピューターの最大実行時間",
 
     "gui.computercraft.config.http": "HTTP",
-    "gui.computercraft.config.http.enabled": "HTTP APIを有効化",
+    "gui.computercraft.config.http.enabled": "有効化",
     "gui.computercraft.config.http.websocket_enabled": "WebSocketを有効化",
     "gui.computercraft.config.http.whitelist": "HTTPホワイトリスト",
     "gui.computercraft.config.http.blacklist": "HTTPブラックリスト",
 
     "gui.computercraft.config.http.timeout": "タイムアウト",
     "gui.computercraft.config.http.max_requests": "最大同時リクエスト数",
-    "gui.computercraft.config.http.max_download": "最大レスポンスサイズ",
-    "gui.computercraft.config.http.max_upload": "最大リクエストサイズ",
+    "gui.computercraft.config.http.max_download": "レスポンスの最大サイズ",
+    "gui.computercraft.config.http.max_upload": "リクエストの最大サイズ",
     "gui.computercraft.config.http.max_websockets": "最大同時WebSocket数",
-    "gui.computercraft.config.http.max_websocket_message": "最大WebSocketメッセージサイズ",
+    "gui.computercraft.config.http.max_websocket_message": "WebSocketメッセージの最大サイズ",
 
     "gui.computercraft.config.peripheral": "周辺機器",
     "gui.computercraft.config.peripheral.command_block_enabled": "コマンドブロック周辺機器を有効化",
-    "gui.computercraft.config.peripheral.modem_range": "モデムの通信範囲（デフォルト）",
-    "gui.computercraft.config.peripheral.modem_high_altitude_range": "モデムの通信範囲（高高度）",
-    "gui.computercraft.config.peripheral.modem_range_during_storm": "モデムの通信範囲（悪天候）",
-    "gui.computercraft.config.peripheral.modem_high_altitude_range_during_storm": "モデムの通信範囲（高高度、悪天候）",
-    "gui.computercraft.config.peripheral.max_notes_per_tick": "コンピュータ毎の同時に再生できる音の最大数",
+    "gui.computercraft.config.peripheral.modem_range": "モデムの通信範囲 (デフォルト)",
+    "gui.computercraft.config.peripheral.modem_high_altitude_range": "モデムの通信範囲 (高高度)",
+    "gui.computercraft.config.peripheral.modem_range_during_storm": "モデムの通信範囲 (悪天候)",
+    "gui.computercraft.config.peripheral.modem_high_altitude_range_during_storm": "モデムの通信範囲 (高高度、悪天候)",
+    "gui.computercraft.config.peripheral.max_notes_per_tick": "コンピュータ毎の最大同時発音数",
 
     "gui.computercraft.config.turtle": "タートル",
     "gui.computercraft.config.turtle.need_fuel": "燃料を有効化",
@@ -186,5 +186,5 @@
     "gui.computercraft.config.turtle.advanced_fuel_limit": "アドバンストタートルの燃料の最大量",
     "gui.computercraft.config.turtle.obey_block_protection": "タートルがブロック保護に従うか",
     "gui.computercraft.config.turtle.can_push": "タートルがエンティティーを押せるか",
-    "gui.computercraft.config.turtle.disabled_actions": "タートルの動作を無効化"
+    "gui.computercraft.config.turtle.disabled_actions": "無効化するタートルの動作"
 }
